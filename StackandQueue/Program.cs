@@ -26,9 +26,11 @@ stack1.Display();
 
 
 
-//Queue
+//Queue and Dequeue
 Queue queue = new Queue();
 queue.Enqueue(56);
 queue.Enqueue(30);
 queue.Enqueue(70);
+queue.DisplayQueue();
+queue.Dequeue();
 queue.DisplayQueue();

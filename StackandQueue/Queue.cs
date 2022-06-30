@@ -35,7 +35,28 @@ namespace StackandQueue
                 }
                 Console.WriteLine("{0} Added into Queue", item);
             }
-            public void DisplayQueue()
+        internal void Dequeue()
+        {
+            
+            if (this.front == null)
+            {
+                Console.WriteLine("Empty");
+                return;
+            }
+
+            
+            Node temp = this.front;                     // Store old front and move ahead one node  
+            this.front = this.front.next;
+
+           
+            if (this.front == null)
+            {
+                this.rear = null;               // If front null, rear also null  
+            }
+
+            Console.WriteLine("Item deleted is {0}", temp.data);
+        }
+        public void DisplayQueue()
             {
                 Node front = this.front;
                 if (front == null)
