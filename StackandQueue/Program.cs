@@ -24,10 +24,9 @@ stack1.Peak();
 stack1.Display();
 
 
-Console.WriteLine("-----------------------------------------------");
 
 
-
+//Queue
 Queue queue = new Queue();
 queue.Enqueue(56);
 queue.Enqueue(30);
